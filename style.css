@@ -3,6 +3,7 @@
     padding: 0;
 }
 .container1{
+    height: 100vh;
 background-color: #E7FFFF;
 display: flex;
 flex-direction:column;
@@ -12,16 +13,29 @@ h1{
     font-size: 2rem;
   color: #333333;
   margin-bottom: 30px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
 .container2{
+    width: inherit;
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin: auto;
+    justify-content: space-evenly;
 }
-.happy,.neutral, .sad{
-    background-color: white;
-    border-width: 2px;
+.mood-btn{
+    padding: 40px;
+    border: 2px solid #A7C7E7;
     border-radius: 10px;
-    border-color: #A7C7E7;
+    cursor:pointer;
+    transition: all 0.3s ease-out;
+}
+
+.mood-btn:hover {
+   transform:scale(1.1);
+    box-shadow: 0 0 10px rgba(167, 199, 231, 0.7);
+  }
+
+img{
+    width: 100px;
+    height: 100px;
 }
