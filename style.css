@@ -42,3 +42,16 @@ img{
     width: 100px;
     height: 100px;
 }
+
+.selected-mood {
+    margin-top: 40px;
+    font-size: 1.8rem;
+    color: #555555;
+    animation: fadeIn 0.5s ease;
+  }
+  
+  /* Optional: A fade-in effect */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
